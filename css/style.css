@@ -12,7 +12,8 @@ a {
   background-color: #1044ff;
   color: white;
   text-decoration: none;
-  padding: 5px;
+  padding: 10px;
+  margin: 5px;
   border-radius: 5px;
 }
 
@@ -38,16 +39,15 @@ h2 {
 }
 nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
 }
 
-ul li {
-  padding: 10px;
+nav ul li {
   list-style: none;
 }
 
 .title {
-  margin: 0;
+  margin: auto;
   height: 400px;
   display: flex;
   flex-direction: column;
