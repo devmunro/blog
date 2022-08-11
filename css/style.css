@@ -1,28 +1,13 @@
 /* imports */ 
 
-@import "media.css";
-@import "author.css";
-@import "footer.css";
+/* @import 'media.css' screen and (max-width: 700px); */
+@import url('author.css');
+@import url('footer.css');
+@import url('global.css');
 
 
-/* global styles*/
 
-body {
-  margin: auto;
-  font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
-  width: 80%;
-}
 
-a {
-  display: inline-block;
-  background-color: #1044ff;
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  margin: 5px;
-  border-radius: 5px;
-}
 
 /*header & nav styles */
 
@@ -31,6 +16,7 @@ header {
   color: white;
   background-color: black;
   width: 80%;
+  min-height: 400px;
   margin: auto;
 }
 nav {
@@ -106,3 +92,46 @@ main {
 }
 
 
+
+
+@media  (max-width:700px) {
+  body {
+    background-color: lightgray;
+    width: 90%;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    border-bottom: black 3px dashed;
+    padding-bottom: 5px;
+  }
+
+  .title {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+   /*blog page*/
+   .authorbio {
+    grid-template-columns: 1fr;
+      justify-content: center;
+      background-color: aliceblue;
+      width: 100%;
+    }
+    .authorbio img,
+    .authorbio ul {
+      justify-self: center;
+    }
+  
+    .quotes {
+      flex-flow: column wrap;
+      
+    }
+    blockquote {
+    width: 90%;}
+} 
