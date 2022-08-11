@@ -17,13 +17,14 @@ a {
 
 header {
   height: 500px;
+  color: white;
+  background-color: black;
 }
 nav {
   display: flex;
   justify-content: space-around;
-  background-color: #ffe7e7;
-  color: #1044ff;
-  height: 30px;
+  
+    height: 30px;
 }
 h2 {
   margin: 0;
@@ -40,7 +41,7 @@ ul li {
 }
 
 header section {
-  background-color: #ffe7e7;
+  
   margin: 0;
   height: 400px;;
   display: flex;
@@ -48,10 +49,6 @@ header section {
    flex-wrap: nowrap;
    align-items: center;
    justify-content: center;
-}
-
-h1, p{
-   color: #1044ff;
 }
 
 h1 {
