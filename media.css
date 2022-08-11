@@ -1,0 +1,32 @@
+@media screen and (max-width: 800px) {
+    body {
+      background-color: lightgray;
+    }
+  
+    main {
+      grid-template-columns: 1fr;
+    }
+    .card {
+      border-bottom: black 3px dashed;
+      padding-bottom: 5px;
+    }
+
+
+    /*blog page*/
+    .authorbio {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        background-color: aliceblue;
+        width: 90%;
+      }
+      .authorbio img,
+      .authorbio ul {
+        justify-self: center;
+      }
+    
+      .quotes {
+        flex-flow: column wrap;
+      }
+  }
+
+  
