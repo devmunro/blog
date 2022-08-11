@@ -1,0 +1,19 @@
+/* footer styles */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    height: 100px;
+    background-color: #ffe7e7;
+  }
+  
+  footer a {
+    background-color: #ffe7e7;
+    justify-self: center;
+  }
+  
+  footer img {
+    width: 50px;
+    height: 50px;
+  }
+  
