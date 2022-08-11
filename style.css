@@ -5,12 +5,12 @@ body {
 }
 
 a {
-    display: inline-block;
-    background-color: #1044ff;
-    color: white    ;
-    text-decoration: none;
-    padding: 5px;
-    border-radius: 5px;
+  display: inline-block;
+  background-color: #1044ff;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 /* */
@@ -21,83 +21,106 @@ header {
   background-color: black;
 }
 nav {
-  display: flex;
-  justify-content: space-around;
-  
-    height: 30px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+
+  height: 30px;
 }
 h2 {
   margin: 0;
   font-size: 20px;
 }
-ul {
+nav ul {
   display: flex;
-  margin: 0;
+  justify-content: space-around;
 }
 
 ul li {
-  padding: 5px;
+  padding: 10px;
   list-style: none;
 }
 
-header section {
-  
+.title {
   margin: 0;
-  height: 400px;;
+  height: 400px;
   display: flex;
   flex-direction: column;
-   flex-wrap: nowrap;
-   align-items: center;
-   justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
-    font-size: 50px;
+  font-size: 50px;
 }
-
-
 
 /* card styling */
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px 20px;
-    width: 100%;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  width: 100%;
+  justify-content: center;
 }
 
-.card { 
-    width: 90%;
-    margin: 20px;
-    
-    
+.card {
+  width: 90%;
+  margin: 20px;
 }
 
 .card .wrapper {
-    width: 100%;
-    
+  width: 100%;
 }
 .card figure {
-    width: 100%;
-    margin: 0;
+  width: 100%;
+  margin: 0;
 }
 .card figure img {
-    width: 100%;
-    border-radius: 10px;;
+  width: 100%;
+  border-radius: 10px;
 }
 
-.author { display: flex;}
-
-.author img { 
-    width:40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 20px;;
+.author {
+  display: flex;
 }
 
+.author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
 
 footer {
-    height: 100px;
-    background-color: #ffe7e7;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  height: 100px;
+  background-color: #ffe7e7;
+}
+
+footer a {
+  background-color: #ffe7e7;
+  justify-self: center;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: lightgray;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    border-bottom: black 3px dashed;
+    padding-bottom: 5px;
+  }
 }
